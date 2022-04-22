@@ -5,8 +5,9 @@ class LoginScreen{
     }
 
     get #input(){
-        return $('id:input')
+        return $('id:input.text("http://lojaebac.ebaconline.art.br")')
     }
+
 
     get #continueButton(){
         return $('id:bottom_button')
@@ -24,7 +25,7 @@ class LoginScreen{
         return $('android=new UiSelector().text("Password")')
     }
 
-    get #loginEnterPassordButton(){
+    get #loginEnterPasswordButton(){
         return $('id:login_enter_password')
     }
 
@@ -49,7 +50,7 @@ class LoginScreen{
     }
 
     async reenterPassword(password){
-        await this.#loginEnterPassordButton.click()
+        await this.#loginEnterPasswordButton.click()
         await this.#password.setValue(password)
         await this.#continueButton.click()
     }
