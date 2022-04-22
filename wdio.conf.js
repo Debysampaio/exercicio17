@@ -19,7 +19,7 @@ exports.config = {
         device: "Samsung Galaxy S22 Ultra",
         os_version: "12.0",
         app: process.env.BROWSERSTACK_APP_ID || 'bs://d8b428c79d2c9423f679aaf1fd7c80340de099b8',
-    'browserstack.local': true
+    'browserstack.local': false
     }],
     waitForTimeout: 20000,
     mochaOpts: {
