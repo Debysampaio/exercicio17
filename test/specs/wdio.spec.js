@@ -21,7 +21,7 @@ describe('Change Forms Components', () => {
 
     it('Should login with valid credencials', async () =>{
         await loginScreen.enterAccessCredencials(process.env.EBAC_STORE_MANAGER_USERNAME, process.env.EBAC_STORE_MANAGER_PASS)
-        expect(await loginScreen.getLabelText()).toEqual('Almost there! We just need to verify your Jetpack connected email address lojaebacqe@gmail.com')
+        expect(await loginScreen.getLabelText()).toEqual('Almost there! We just need to verify your Jetpack connected email address aluno_ebac@teste.com')
     })
 
     it('Should confirm the password and access manager panel', async () =>{
